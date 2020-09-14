@@ -12,11 +12,11 @@
 
 conducted with 200 epochs and 10 individual runs.
 
-| Criterion / Improvements | Ori                             | Neither                         | Pairwise Loss                   | Momentum Updating | Both              |
-| ------------------------ | ------------------------------- | ------------------------------- | ------------------------------- | ----------------- | ----------------- |
-| Sample Distance          | /                               | AUROC: 0.8449<br />AUPR: 0.0618 | AUROC:<br />AUPR:               | AUROC:<br />AUPR: | AUROC:<br />AUPR: |
-| LOF                      | AUROC: 0.5093<br />AUPR: 0.0137 | AUROC: 0.4983<br />AUPR: 0.0130 | AUROC:<br />AUPR:               | AUROC:<br />AUPR: | AUROC:<br />AUPR: |
-| Isolation Forest         | AUROC: 0.5021<br />AUPR: 0.0136 | AUROC: 0.5464<br />AUPR: 0.0161 | AUROC: 0.6501<br />AUPR: 0.0287 | AUROC:<br />AUPR: | AUROC:<br />AUPR: |
+| Criterion / Improvements | Ori                             | Neither                         | Pairwise Loss                   | Momentum Updating | Both                          |
+| ------------------------ | ------------------------------- | ------------------------------- | ------------------------------- | ----------------- | ----------------------------- |
+| Sample Distance          | /                               | AUROC: 0.8449<br />AUPR: 0.0618 | AUROC:<br />AUPR:               | AUROC:<br />AUPR: | AUROC:0.8448<br />AUPR:030563 |
+| LOF                      | AUROC: 0.5093<br />AUPR: 0.0137 | AUROC: 0.4983<br />AUPR: 0.0130 | AUROC:<br />AUPR:               | AUROC:<br />AUPR: | AUROC:0.5237<br />AUPR:0.0134 |
+| Isolation Forest         | AUROC: 0.5021<br />AUPR: 0.0136 | AUROC: 0.5464<br />AUPR: 0.0161 | AUROC: 0.6501<br />AUPR: 0.0287 | AUROC:<br />AUPR: | AUROC:0.6802<br />AUPR:0.0330 |
 
 ### Secom
 
