@@ -145,8 +145,8 @@ class RNet(nn.Module):
         self.layers = nn.Sequential(
             nn.Linear(in_c, out_c),
             nn.LeakyReLU(negative_slope=2e-1, inplace=True),
-            nn.Dropout(dropout_r),
-            nn.Linear(out_c, out_c)
+            # nn.Dropout(dropout_r),
+            # nn.Linear(out_c, out_c)
         )
 
         # init
@@ -234,7 +234,8 @@ class RDP_Model:
             self.epoch = epoch
 
         r_target = self.r_target_net(x).detach()
-        r_pred = self.r_net(x)
+        # r_pred = self.r_net(x)
+        r_pred = self.r_net_projection(self.r_net(x)) 
         gap_loss = torch.mean(F.mse_loss(r_pred, r_target, reduction='none'), dim=1).mean()
         loss = gap_loss
 
